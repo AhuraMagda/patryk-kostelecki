@@ -18,7 +18,8 @@ html {
 }
 
 :root {
-    --color-background: #02050c;
+/*     --color-background: #02050c;     */
+    --color-background: red;
     --color-purple: #4e0078;
     --color-logo-peach: #c18a53;
     --color-text: rgb(228, 227, 227);
