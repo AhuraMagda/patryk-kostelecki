@@ -82,7 +82,8 @@ h1 {
 }
 
 .aboutme--photo img {
-    max-height: 450px;
+    height: 40vw;
+    max-height: 750px;
     padding-right: 20px;
 }
 
@@ -91,14 +92,17 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 60%;
     padding: 20px 0px 20px 20px;
     color: var(--color-text);
     line-height: 1.6em;
     text-align: center;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
 }
 
+#small {
+    display: none;
+}
 
 #bold {
     font-weight: 700;
@@ -236,15 +240,6 @@ footer a:active, #my-email:active {
     text-decoration: underline;
 }
 
-#small {
-    display: none;
-
-}
-
-#big {
-    overflow: hidden;
-    white-space: nowrap;
-}
 
 
 
@@ -267,12 +262,6 @@ footer a:active, #my-email:active {
     }
     footer a {
         font-size: 1.1rem;
-    }
-}
-
-@media only screen and (min-width: 412) {
-    .not-big {
-        display: none;
     }
 }
 
