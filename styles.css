@@ -246,6 +246,8 @@ footer a:active, #my-email:active {
     white-space: nowrap;
 }
 
+
+
 /* Media queries */
 
 @media only screen and (max-width: 411px) {
@@ -266,7 +268,12 @@ footer a:active, #my-email:active {
     footer a {
         font-size: 1.1rem;
     }
+}
 
+@media only screen and (min-width: 412) {
+    .not-big {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 892px) {
