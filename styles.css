@@ -10,7 +10,7 @@ html {
 }
 
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Merriweather', serif;
@@ -78,12 +78,12 @@ h1 {
 .aboutme {
     display: flex;
     justify-content: center;
-    margin: 5% 10%;
+    margin: 5% 1%;
 }
 
 .aboutme--photo img {
     max-height: 450px;
-    padding-right: 40px;
+    padding-right: 20px;
 }
 
 .aboutme--text {
@@ -91,12 +91,14 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    padding: 20px;
-    font-size: 2rem;
+    width: 70%;
+    padding: 20px 0px 20px 20px;
     color: var(--color-text);
     line-height: 1.6em;
+    text-align: center;
+    font-size: 1.6vw;
 }
+
 
 #bold {
     font-weight: 700;
@@ -234,6 +236,16 @@ footer a:active, #my-email:active {
     text-decoration: underline;
 }
 
+#small {
+    display: none;
+
+}
+
+#big {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 411px) {
@@ -254,6 +266,7 @@ footer a:active, #my-email:active {
     footer a {
         font-size: 1.1rem;
     }
+
 }
 
 @media only screen and (max-width: 892px) {
@@ -263,10 +276,16 @@ footer a:active, #my-email:active {
     }
     .aboutme--text {
         width: 100%;
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .aboutme--photo img {
         padding-right: 0px;
+    }
+    #big {
+        display: none;
+    }
+    #small {
+        display: inline;
     }
 }
 
@@ -284,5 +303,8 @@ footer a:active, #my-email:active {
         display: flex;
         justify-content: center;
         padding: 1.5% 0%;
+    }
+    .aboutme--text {
+        font-size: 25px;
     }
 }
