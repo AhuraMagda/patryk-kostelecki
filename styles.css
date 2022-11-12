@@ -31,7 +31,6 @@ body {
 
 
 /* Header */
-
 .logo {
     display: flex;
     justify-content: center;
@@ -74,7 +73,6 @@ h1 {
 
 
 /* About me */
-
 .aboutme {
     display: flex;
     justify-content: center;
@@ -112,7 +110,6 @@ h1 {
 }
 
 /* Sections */
-
 section {
     display: flex;
     flex-direction: column;
@@ -129,7 +126,6 @@ h2 {
 } 
 
 /* Button */
-
 button {
     font-size: 2rem;
     background-color: var(--color-purple);
@@ -206,8 +202,8 @@ button:active {
     transition: color 0.5s;
 }
 
-/* Footer */
 
+/* Footer */
 footer {
     display: flex;
     justify-content: center;
@@ -242,10 +238,7 @@ footer a:active, #my-email:active {
 }
 
 
-
-
 /* Media queries */
-
 @media only screen and (max-width: 411px) {
     h1 {
         margin: 3%;
@@ -283,6 +276,12 @@ footer a:active, #my-email:active {
     }
     #small {
         display: inline;
+    }
+    .aboutme--photo{
+        margin-bottom: 5rem;
+    }
+    .ebook h2 {
+        padding: 5rem 0.9rem 0rem 0.9rem;
     }
 }
 
