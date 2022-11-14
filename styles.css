@@ -1,0 +1,306 @@
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: 'NowRegular';
+    src: url(/fonts/NowAlt-Regular.otf);
+    font-family: 'NowBold';
+    src: url(/fonts/NowAlt-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+}
+
+:root {
+    --color-background: #02050c;
+    --color-purple: #4e0078;
+    --color-logo-peach: #c18a53;
+    --color-text: rgb(228, 227, 227);
+}
+
+body {
+    background-color: var(--color-background);
+    width: 100%;
+}
+
+
+/* Header */
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 80%;
+    max-width: 550px;
+    height: auto;
+}
+
+.title-box {
+    padding: 2% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    padding: 1.5% 1% 1% 1%;
+    margin-bottom: 6%;
+    font-size: 5.2rem;
+    background-color: var(--color-purple);
+    border-radius: 15px;
+    font-family: 'NowBold', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.title-box p {
+    text-align: center;
+    color: var(--color-logo-peach);
+    font-size: 3rem;
+    line-height: 1.5em;
+    padding: 4% 3%;
+    max-width: 1744px;
+}
+
+
+/* About me */
+.aboutme {
+    display: flex;
+    justify-content: center;
+    margin: 5% 1%;
+}
+
+.aboutme--photo img {
+    height: 40vw;
+    min-height: 450px;
+    max-height: 750px;
+    padding-right: 20px;
+}
+
+.aboutme--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 20px 0px 20px 20px;
+    color: var(--color-text);
+    line-height: 1.6em;
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+#small {
+    display: none;
+}
+
+#bold {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 13px;
+}
+
+/* Sections */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: var(--color-text);
+    font-size: 3.4rem;
+    font-family: 'NowRegular', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+} 
+
+/* Button */
+button {
+    font-size: 2rem;
+    background-color: var(--color-purple);
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 20px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 15px;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(132, 90, 170);
+}
+
+button:focus {
+    background-color: rgb(132, 90, 170);
+}
+
+button:active {
+    text-decoration: underline;
+}
+
+
+/* Consultation */
+.consultation {
+    margin: 2% 15%;
+    border: dotted 4px var(--color-logo-peach);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Ebook */
+.ebook {
+    margin-bottom: 10%;
+}
+
+.ebook img {
+    max-height: 650px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Contact */
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1% 2%;
+    color: var(--color-text);
+    background-color: var(--color-purple);
+    border: dotted 2px grey;
+}
+
+.contact-info img {
+    height: 4.5rem;
+    margin: 0 1vw 0 1.5vw;
+    border-radius: 25%;
+}
+
+#my-email {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 1.7rem;
+    padding-right: 3%;
+    letter-spacing: 0.1em;
+    transition: color 0.5s;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 3% 0%;
+}
+
+footer div {
+    display: flex;
+    max-width: 500px;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--color-text);
+    transition: color 0.5s;
+    padding: 0 10px;
+}
+
+footer a:hover, #my-email:hover {
+    color: grey;
+}
+
+footer a:focus, #my-email:focus {
+    color: grey;
+}
+
+footer a:active, #my-email:active {
+    color: grey;
+    text-decoration: underline;
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 411px) {
+    h2 {
+        font-size: 3rem;
+    }
+    #my-email {
+        font-size: 1.2rem;
+    }
+    footer a {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 892px) {
+    h1 {
+        margin: 3%;
+        font-size: 3rem;
+        padding: 3% 2% 2% 2%;
+    }
+    .title-box p {
+        font-size: 1.8rem;
+    }
+    .aboutme {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .aboutme--photo{
+        margin-bottom: 5rem;
+    }
+    .aboutme--photo img {
+        padding-right: 0px;
+    }
+    .aboutme--text {
+        width: 100%;
+        font-size: 2rem;
+    }
+    #big {
+        display: none;
+    }
+    #small {
+        display: inline;
+    }
+    .ebook h2 {
+        padding: 5rem 5.8rem 0rem 5.8rem;
+    }
+}
+
+@media only screen and (min-width: 1430px) {
+    h1 {
+        margin-bottom: 1%;
+    }
+    .aboutme {
+        margin: 0;
+    }
+    .aboutme--text {
+        font-size: 25px;
+    }
+    .ebook {
+        margin-bottom: 5%;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 1.5% 0%;
+    }
+}
