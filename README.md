@@ -11,9 +11,6 @@ This is a an easy personal website made for Patryk Kostelecki.
 
 
 ## Overview
-### Links
-- Link to the website: [https://emanuelkulesza.pl/](https://emanuelkulesza.pl/)
-
 ## My process
 ### Built with
 - Semantic HTML5 markup
