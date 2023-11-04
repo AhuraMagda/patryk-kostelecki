@@ -1,23 +1,25 @@
 @font-face {
-    font-family: 'NowRegular';
-    src: url(/fonts/NowAlt-Regular.otf);
-    font-family: 'NowBold';
-    src: url(/fonts/NowAlt-Bold.otf);
+  font-family: "NowRegular";
+  src: url(/fonts/NowAlt-Regular.otf);
+  font-family: "NowBold";
+  src: url(/fonts/NowAlt-Bold.otf);
 }
 
 img {
-    height: 100px;
+  height: 100px;
 }
 
 body {
-    padding: 5%;
-    max-width: 900px;
+  padding: 5%;
+  max-width: 900px;
 }
 
-h1, h2, h3 {
-    font-family: 'NowBold';
+h1,
+h2,
+h3 {
+  font-family: "NowBold";
 }
 
 p {
-    font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }

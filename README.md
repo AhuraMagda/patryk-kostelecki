@@ -1,5 +1,5 @@
 # Patryk Kostelecki Website
-This is a an easy personal website made for Patryk Kostelecki.
+This is a a simple HTML + CSS website made for Patryk Kostelecki.
 
 ## Table of contents
 - [Overview](#overview)
